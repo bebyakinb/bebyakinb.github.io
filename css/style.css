@@ -894,3 +894,19 @@ body:after {
 .blog .contacts{
     padding-bottom: 0px;
 }
+
+.label {
+    color: white;
+    margin: 1px;
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+
+}
+
+.python {background-color: #4684b7;} /* blue */
+.pandas {background-color: #0c0a51;} /* Blue */
+.matplotlib {background-color: #9f9f9f;} /* gary */
+.tableau {background-color: #1f447e;} /* blue */
+.other {background-color: #e7e7e7; color: black;} /* Gray */
