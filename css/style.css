@@ -5,6 +5,7 @@ html {
 
 body {
   line-height: 1.7;
+  font-family:"FuturaBookC";
   color: #666666;
   font-weight: 400;
   font-size: 1rem; }
@@ -17,6 +18,16 @@ body {
   background: #000;
   color: #fff; }
 
+@font-face {
+	font-family: 'FuturaBookC';
+	src: url('../fonts/futurabookc.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futurabookc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futurabookc.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futurabookc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futurabookc.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futurabookc.svg#futurabookc') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -26,7 +37,7 @@ a {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Bitter", serif;
+  font-family: "FuturaBookC", "Bitter", serif;
   color: #000; }
 
 .border-2 {
@@ -62,7 +73,8 @@ body:after {
     background: rgba(0, 0, 0, 0.2); }
 
 .btn {
-  font-size: 16px;
+  font-size:  1.2rem;
+  font-family: "FuturaBookC", "Bitter", serif;
   border-radius: 30px;
   padding: 10px 30px; }
   .btn:hover, .btn:active, .btn:focus {
@@ -90,7 +102,7 @@ body:after {
 .form-control {
   height: 43px;
   border-radius: 30px;
-  font-family: "Arbutus Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: "FuturaBookC", "Bitter", serif, "Arbutus Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .form-control:active, .form-control:focus {
     border-color: #264468; }
   .form-control:hover, .form-control:active, .form-control:focus {
@@ -269,6 +281,7 @@ body:after {
 /* Navbar */
 .site-navbar {
   margin-bottom: 0px;
+  font-size: 1.2rem;
   z-index: 1999;
   position: absolute;
   top: 0;
@@ -286,7 +299,7 @@ body:after {
     margin: 0;
     padding: 0;
     margin-bottom: 0;
-    font-family: "Arbutus Slab", serif; }
+    font-family: "FuturaBookC", "Arbutus Slab", serif; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block;
@@ -582,7 +595,7 @@ body:after {
   overflow: hidden;
   position: relative; }
   .site-blocks-cover .lead {
-    font-family: "Arbutus Slab", serif;
+    font-family: "FuturaBookC", "Arbutus Slab", serif;
     font-size: 1.3rem;
     color: #1a1a1a; }
   .site-blocks-cover.overlay {
@@ -610,7 +623,7 @@ body:after {
     z-index: 2; }
   .site-blocks-cover h1 {
     font-size: 3rem;
-    font-family: "Arbutus Slab", serif; }
+    font-family: "FuturaBookC", "Arbutus Slab", serif; }
   .site-blocks-cover .img-face {
     position: absolute;
     right: -5%;
@@ -623,13 +636,13 @@ body:after {
 
 .section-title {
   position: relative;
-  padding-bottom: 20px; }
+  padding-bottom: 0px; }
   .section-title:after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 2px;
+    height: 0px;
     background: #264468;
     width: 50px; }
   .section-title.text-center:after {
@@ -896,6 +909,8 @@ body:after {
 }
 
 .label {
+    font-family: "FuturaBookC", "Bitter", serif
+    font-color: white;
     color: white;
     margin: 1px;
     padding: 10px;
@@ -912,3 +927,15 @@ body:after {
 .tableau {background-color: #1f447e;} /* blue */
 .folium {background-color: #107163;} /* folium */
 .other {background-color: #e7e7e7; color: black;} /* Gray */
+
+.tableauPlaceholder {
+    margin: 0px;
+    margin-top: -53px;
+    padding: 0px;
+    z-index: 0;
+}
+
+.tableauLabel {
+    position: relative;
+    z-index: 1000;
+}
